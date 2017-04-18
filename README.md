@@ -59,3 +59,5 @@ LavaWeather-一个集成各种天气相关View的项目
  ```
 仿QQ天气预报UI ：http://blog.csdn.net/king1425/article/details/57084245
 仿华为天气预报UI ：http://blog.csdn.net/king1425/article/details/57083778
+
+各位客官如果觉得还不错，就双击666点亮star
