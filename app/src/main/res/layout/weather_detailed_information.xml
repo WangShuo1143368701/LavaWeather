@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/section_title"
+        android:text="详细信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_linearlayout"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="16dp"
+        android:showDividers="none" >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/detail_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="-°"
+                android:singleLine="true"
+                android:textColor="@color/w_text_primary"
+                android:textSize="52dp" />
+
+
+            <TextView
+                android:id="@+id/detail_bottomline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:gravity="center"
+                android:paddingRight="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/w_text_primary"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="体感温度" />
+
+                <TextView
+                    android:id="@+id/detailed_fl"
+                    style="@style/todaydetail_info_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="湿度" />
+
+                <TextView
+                    android:id="@+id/detailed_hum"
+                    style="@style/todaydetail_info_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="能见度" />
+
+                <TextView
+                    android:id="@+id/detailed_vis"
+                    style="@style/todaydetail_info_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="降雨量" />
+
+                <TextView
+                    android:id="@+id/detailed_pcpn"
+                    style="@style/todaydetail_info_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_divider_size"
+        android:background="@color/w_divider" />
+
+</LinearLayout>

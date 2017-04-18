@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/now_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="56dp"
+            android:textColor="@color/mxx_text_primary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/now_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="24dp"
+            android:gravity="center"
+            android:layout_below="@id/now_city_name"
+            android:text="-"
+            android:textColor="@color/mxx_text_primary"
+            android:textSize="72dp" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/now_city_name"
+            android:layout_toRightOf="@id/now_tmp"
+            android:text="°"
+            android:textColor="@color/mxx_text_primary"
+            android:textSize="72dp" />-->
+
+        <TextView
+            android:id="@+id/now_cloudy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/now_tmp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/w_text_secondary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/now_aqi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/now_cloudy_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/w_text_secondary"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/now_basic_update_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/w_text_secondary"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+

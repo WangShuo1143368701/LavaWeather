@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/section_title"
+        android:text="空气质量" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_linearlayout"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="16dp"
+        android:showDividers="none" >
+
+        <com.lava.weather.view.AqiView
+            android:id="@+id/aqi_view"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical" />
+
+        <!--<TextView
+            android:id="@+id/aqi_detail_text"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/w_text_primary"
+            android:textSize="22dp"
+            android:visibility="gone" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="PM2.5[入肺颗粒物]" />
+
+                <TextView
+                    android:id="@+id/aqi_pm25"
+                    style="@style/todaydetail_info_content"
+                    android:text="--" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="PM10[可吸入颗粒物]" />
+
+                <TextView
+                    android:id="@+id/aqi_pm10"
+                    style="@style/todaydetail_info_content"
+                    android:text="--" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="SO₂[二氧化硫]" />
+
+                <TextView
+                    android:id="@+id/aqi_so2"
+                    style="@style/todaydetail_info_content"
+                    android:text="--" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/w_divider_size_secondary"
+                android:background="@color/w_divider_secondary" />
+
+            <LinearLayout style="@style/todaydetail_info_layout" >
+
+                <TextView
+                    style="@style/todaydetail_info_title"
+                    android:text="NO₂[二氧化氮]" />
+
+                <TextView
+                    android:id="@+id/aqi_no2"
+                    style="@style/todaydetail_info_content"
+                    android:text="--" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_divider_size"
+        android:background="@color/w_divider" />
+</LinearLayout>

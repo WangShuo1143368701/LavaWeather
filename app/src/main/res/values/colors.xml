@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="mxx_white_background">#ffefeff4</color>
+    <color name="w_divider">#30ffffff</color>
+    <color name="w_divider_secondary">#10ffffff</color>
+    <color name="mxx_cell_divider">#ffd5d6d9</color>
+    <color name="mxx_cell_normal">#ffffffff</color>
+    <color name="mxx_cell_pressed">#ffe0e0e0</color>
+    <color name="mxx_text_primary">#ffffffff</color>
+    <color name="mxx_text_secondary">#ffeeeeee</color>
+    <color name="w_text_title">#ccffffff</color>
+    <color name="w_text_primary">#ffffffff</color>
+    <color name="w_text_secondary">#88ffffff</color>
+    <color name="mxx_cell_text_description">#ff6d6d72</color>
+    <color name="mxx_cell_text_title">#ffffffff</color>
+    <color name="mxx_theme">#ff007aff</color>
+
+    <dimen name="mxx_dialog_width">300dp</dimen>
+
+    <color name="mxx_dialog_text_title">#ff000000</color>
+    <color name="mxx_dialog_text_message">#ff060606</color>
+    <color name="mxx_dialog_text_button">#ff007aff</color>
+    <color name="mxx_view_bg_default_normal">#00000000</color>
+    <color name="mxx_view_bg_default_pressed">#a0aaaaaa</color>
+</resources>

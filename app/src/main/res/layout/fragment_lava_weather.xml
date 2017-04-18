@@ -1,0 +1,83 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/bing_pic_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/bg3"
+    android:scaleType="centerCrop" />
+
+  <!--  <com.lava.weather.dynamicweather.DynamicWeatherView
+        android:id="@+id/dynamic_weather_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <com.lava.weather.refreshlayout.WsRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/weather_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+            <com.lava.weather.view.FirstMatchInScrollViewLinearLayout
+                android:id="@+id/first_lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <!-- <include layout="@layout/title_bar" />-->
+
+                <include
+                    layout="@layout/weather_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"/>
+
+                <com.lava.weather.view.DailyWeatherView
+                    android:id="@+id/DailyWeatherView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/w_divider_size"
+                    android:background="@color/w_divider" />
+
+                <include layout="@layout/weather_hourly" />
+
+                <include layout="@layout/weather_detailed_information" />
+
+                <include layout="@layout/weather_air_quality" />
+
+                <include layout="@layout/weather_sun_wind" />
+
+                <include layout="@layout/weather_moji_hourly"/>
+
+                <include layout="@layout/weather_qq_hourly"/>
+
+                <include layout="@layout/weather_hw_hourly"/>
+
+            </com.lava.weather.view.FirstMatchInScrollViewLinearLayout>
+        </ScrollView>
+
+    </com.lava.weather.refreshlayout.WsRefreshLayout>
+
+</FrameLayout>

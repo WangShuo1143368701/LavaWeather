@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/section_title"
+        android:text="仿墨迹" />
+
+    <com.lava.weather.view.IndexHorizontalScrollView
+        android:id="@+id/indexHorizontalScrollView"
+        android:fadeScrollbars="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.lava.weather.view.Today24HourView
+            android:id="@+id/today24HourView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </com.lava.weather.view.IndexHorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/w_divider_size"
+        android:background="@color/w_divider" />
+
+</LinearLayout>
